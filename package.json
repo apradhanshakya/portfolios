@@ -1,0 +1,23 @@
+{
+  "main": "src/index.js",
+  "dependencies": {
+    "@babel/cli": "^7.12.8",
+    "@deloitte-digital-au/webpack-config": "^3.0.0",
+    "@deloitte-digital-au/webpack-config-react": "^3.0.0",
+    "node-sass": "^5.0.0"
+  },
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --config webpack.config.js --open",
+    "watch": "webpack --mode development --watch",
+    "lint": "lint:js && lint:styles",
+    "lint:js": "eslint \"**/*.js\"",
+    "lint:styles": "stylelint \"**/*.scss\"",
+    "compile:sass": "node-sass src/assets/sass/main.scss src/assets/css/style.css -w"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "IE 11",
+    "iOS >= 8"
+  ]
+}
