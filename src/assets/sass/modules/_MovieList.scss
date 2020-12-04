@@ -1,5 +1,54 @@
-.movieList {
+
+.movie-list {
+    &.container {
+        margin: 0 auto;
+        max-width: 800px;
+    }
+   
 	.card {
-		box-shadow: $box-shadow;
-	}
+        box-shadow: $box-shadow;
+        padding: 40px;
+        margin: 40px;
+    }
+
+    .input-group {
+        display: flex;
+        justify-content: space-between;
+        .control-group {
+            width: 45%;
+        }
+    }
+    
+    .control-group {
+        margin-bottom: 30px;
+        label {
+            font-weight: bold;
+            display: block;
+            color: $dark-grey;
+            margin-bottom: 10px;
+
+
+        }
+        input {
+            border: none;
+            border-bottom: 2px solid #ccc;
+            width: 100%;
+            font-size: 16px;
+            color: $grey;
+
+
+            &:focus {
+                outline: none;
+                border-color: $color-primary;
+            }
+        }
+    }
+
+    button {
+        background: $color-primary;
+        color: $white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+    }
 }

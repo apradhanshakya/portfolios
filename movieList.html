@@ -6,34 +6,41 @@
     <script src="src/index.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <div class="movieList">
-            <main>
-                <section class="card">
-                    <form>
-                        <label for="movie">
-                            Favorite Movie
-                            <input type="text" id="movie"/>
-                        </label>
-                        <label for="movie">
-                            Extra Information (Name)
-                            <input type="text" />
-                        </label>
-                        <label for="movie">
-                            Extra Information (Value)
-                            <input type="text" />
-                        </label>
-                        <button>Add Movie</button>
-                    </form>
-                </section>
-                <section class="card">
-                    <label for="movie">
-                        Favorite Movie
-                        <input type="text" id="movie"/>
+    <div class="movie-list container">
+        <section class="card">
+            <div class="control-group">
+                <label for="title">
+                    Favorite Movie
+                </label>
+                <input type="text" id="title"/>   
+            </div>
+            <div class="input-group">
+                <div class="control-group">
+                    <label for="extra-name">
+                        Extra Information (Name)
                     </label>
-                </section>
-            </main>
-        </div>
+                    <input type="text" id="extra-name" />   
+                </div>
+                <div class="control-group">
+                    <label for="extra-value">
+                        Extra Information (Value)
+                    </label>
+                    <input type="text" id="extra-value"  />
+                </div>
+            </div>
+            <button>Add Movie</button>
+        </section>
+        <section class="card">
+            <div class="control-group">
+                <label for="movie">
+                    Favorite Movie
+                </label>
+                <input type="text" id="movie"/>
+            </div>
+            <ul class="list">
+
+            </ul>            
+        </section>
     </div>
 </body>
 </html>
