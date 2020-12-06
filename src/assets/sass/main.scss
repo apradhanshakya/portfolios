@@ -10,6 +10,7 @@
 /* -------------- MODULES ------------ */
 
 @import './modules/MovieList.scss';
+@import './modules/BookList.scss';
 
 
 html {
@@ -76,6 +77,10 @@ h2 {
 	background: #f7f7f7;
 	padding: 40px;	
 
+	&.react {
+		background: $white;
+	}
+
 	&__section {
 		margin: 40px auto;
 		max-width: 1400px;
@@ -99,6 +104,8 @@ h2 {
 			border-radius: 5px;
 			height:150px;
 			display: flex;
+			text-decoration: none;
+			color: $grey;
 
 			.img-section {
 				width: 30%;
@@ -135,3 +142,4 @@ h2 {
 		}
 	}
 }
+

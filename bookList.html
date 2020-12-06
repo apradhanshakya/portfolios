@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="src/assets/css/style.css"  type="text/css" />
+    <title>Page Title</title>
+    <script src="src/js/bookList.js" defer></script>
+</head>
+<body>
+    <div class="container book-list">
+        <div id="backdrop"></div>
+        <div class="modal card" id="add-modal">
+            <div class="modal__content">
+                <label for="title">Movie Title</label>
+                <input type="text" name="title" id="title" />
+                <label for="imageUrl">Image URL</label>
+                <input type="text" name="image-url" id="image-url" />
+                <label for="rating">Your Rating</label>
+                <input type="number" step="1" max="5"  min="1" name="rating" id="rating"/>
+            </div>
+            <div class="modal__actions">
+                <button class="btn btn--passive">Cancel</button>
+                <button class="btn btn--success">Add</button>
+            </div>
+        </div>
+        <div class="modal card" id="delete-modal">
+            <h2 class="modal__title">Are you sure?</h2>
+            <p class="modal__content">
+                Are you sure you want to delete? This action cant be made undone!
+            </p>
+            <div class="modal__actions">
+                <button class="btn btn--passive">No (Cancel)</button>
+                <button class="btn btn--success">Yes</button>
+            </div>
+        </div>
+        <header>
+            <h1>Favorite Books</h1>
+            <button id="add-book">ADD BOOK</button>
+        </header>
+        <main>
+            <section id="entry-text" class="card">
+              <p>Your personal Book database!</p>
+            </section>
+            <ul id="list"></ul>
+        </main>
+    </div>
+</body>
+</html>

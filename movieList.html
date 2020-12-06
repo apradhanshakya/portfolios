@@ -3,44 +3,48 @@
 <head>
     <link rel="stylesheet" href="src/assets/css/style.css"  type="text/css" />
     <title>Page Title</title>
-    <script src="src/index.js" defer></script>
+    <script src="src/js/movieList.js" defer></script>
 </head>
 <body>
     <div class="movie-list container">
-        <section class="card">
-            <div class="control-group">
-                <label for="title">
-                    Favorite Movie
-                </label>
-                <input type="text" id="title"/>   
-            </div>
-            <div class="input-group">
+        <form id="movie-form">
+            <section class="card">
                 <div class="control-group">
-                    <label for="extra-name">
-                        Extra Information (Name)
+                    <label for="title">
+                        Favorite Movie
                     </label>
-                    <input type="text" id="extra-name" />   
+                    <input type="text" id="title"/>   
                 </div>
-                <div class="control-group">
-                    <label for="extra-value">
-                        Extra Information (Value)
-                    </label>
-                    <input type="text" id="extra-value"  />
+                <div class="input-group">
+                    <div class="control-group">
+                        <label for="extra-name">
+                            Extra Information (Name)
+                        </label>
+                        <input type="text" id="extra-name" />   
+                    </div>
+                    <div class="control-group">
+                        <label for="extra-value">
+                            Extra Information (Value)
+                        </label>
+                        <input type="text" id="extra-value"  />
+                    </div>
                 </div>
-            </div>
-            <button>Add Movie</button>
-        </section>
+                <input type="submit" value="Add Movie" class="btn">
+            </section>
+        </form>
+        
         <section class="card">
             <div class="control-group">
                 <label for="movie">
-                    Favorite Movie
+                    Search Movie By Title
                 </label>
-                <input type="text" id="movie"/>
-            </div>
-            <ul class="list">
-
-            </ul>            
+                <input type="text" id="search-input"/>
+            </div>  
+            <button id="btn-search-movie" class="btn">Search Movie</button>       
         </section>
+        <ul class="list card">
+           
+        </ul>  
     </div>
 </body>
 </html>
