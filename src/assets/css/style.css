@@ -269,35 +269,37 @@ body {
   min-height: 100vh;
   margin: 0 auto; }
 
-main {
-  padding-top: 40px; }
-
 h1, h2 {
   font-size: 30px;
   text-align: center;
-  margin: 0 0 20px 0;
-  color: #494949; }
+  margin: 0 0 60px 0; }
 
 h2 {
   font-size: 18px; }
 
 .section-about {
-  max-width: 900px;
-  margin: 40px auto; }
+  position: relative;
+  padding: 60px 50px; }
+  .section-about h1, .section-about h2 {
+    color: #00873E; }
+  .section-about .bg-video {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .15; }
+    .section-about .bg-video__content {
+      width: 100%; }
   .section-about .about {
     margin: 0 auto;
+    max-width: 900px;
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 60px 40px;
     padding-left: 70px;
     transform: skewX(-12deg); }
-    .section-about .about .bg-video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%; }
-      .section-about .about .bg-video__content {
-        width: 100%; }
     .section-about .about__shape {
       width: 10rem;
       height: 10rem;
@@ -312,7 +314,9 @@ h2 {
       transform: skewX(12deg); }
     .section-about .about__img {
       height: 100%;
-      width: 100%; }
+      transform: scale(1);
+      backface-visibility: hidden;
+      transition: all .5s; }
     .section-about .about__caption {
       position: absolute;
       top: 50%;
@@ -328,7 +332,8 @@ h2 {
       opacity: 1;
       transform: translate(-50%, -50%); }
     .section-about .about:hover .about__img {
-      filter: blur(3px) brightness(80%); }
+      transform: scale(1.1);
+      filter: blur(3px) brightness(70%); }
   .section-about p {
     font-size: 18px;
     text-align: left;
