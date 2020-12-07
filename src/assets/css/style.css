@@ -247,41 +247,12 @@
   to {
     transform: translateY(0); } }
 
-html {
-  box-sizing: border-box; }
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0; }
-
-h1, h2, h2 {
-  margin: 0;
-  padding: 0; }
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  color: #817e7e; }
-
-.container {
-  min-height: 100vh;
-  margin: 0 auto; }
-
-h1, h2 {
-  font-size: 30px;
-  text-align: center;
-  margin: 0 0 60px 0; }
-
-h2 {
-  font-size: 18px; }
-
 .section-about {
   position: relative;
   padding: 60px 50px; }
   .section-about h1, .section-about h2 {
-    color: #00873E; }
+    color: #00873E;
+    margin-bottom: 60px; }
   .section-about .bg-video {
     position: absolute;
     top: 0px;
@@ -382,3 +353,33 @@ h2 {
           text-align: left; }
         .projects__list--link .content p {
           font-size: 14px; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h2 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #817e7e; }
+
+.container {
+  min-height: 100vh;
+  margin: 0 auto; }
+
+h1, h2 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0; }
+
+h2 {
+  font-size: 18px; }
