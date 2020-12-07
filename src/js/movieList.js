@@ -1,5 +1,3 @@
-
-
 const $movieForm = document.getElementById('movie-form');
 const $btnSearchMovie = document.getElementById('btn-search-movie');
 const $movieList = document.querySelector('.list');
@@ -26,6 +24,7 @@ const renderMovies = (movieToFilter = '') => {
         const div = document.createElement('div');
         
         let liTitle = `${movie.info.title}`;
+        
         for(const key in movie.info) {
             if(key!=='title') {
                 const liExtraInfoName = `${key}`;
@@ -36,10 +35,7 @@ const renderMovies = (movieToFilter = '') => {
         liEl.textContent = liTitle;
         liEl.appendChild(div);
         list.appendChild(liEl);
-
     });
-    
-
 }
 
 const addMovieHandler = (e) => {
@@ -87,4 +83,3 @@ const loadEventListeners = () => {
 }
 
 loadEventListeners();
-
