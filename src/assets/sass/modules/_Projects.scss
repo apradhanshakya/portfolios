@@ -1,0 +1,70 @@
+
+.projects {
+	background: $light-grey;
+	padding: 40px;	
+
+	&.react {
+		background: $white;
+	}
+
+	&__section {
+		margin: 40px auto;
+		max-width: 1400px;
+	}
+
+	&__list {
+		list-style:none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		
+
+		&--item {
+			padding: 10px;
+			width: 25%;
+		}
+
+		&--link {
+			display: block;
+			box-shadow: $box-shadow;
+			border-radius: 5px;
+			height:150px;
+			display: flex;
+			text-decoration: none;
+			color: $grey;
+
+			.img-section {
+				width: 30%;
+			}
+
+			.img-container {
+				width: 100%;
+				position: relative;
+				padding-top: 75%;
+				  
+
+				img {
+					width: 100%;
+					height: 150px;
+					position: absolute;
+					top:0;
+					object-fit: cover;
+				}
+			}
+
+			.content {
+				padding: 10px;
+				width: 70%;
+
+				h2 {
+					text-align: left;
+				}
+
+				p {
+					font-size: 14px;
+				}
+			}
+
+		}
+	}
+}
