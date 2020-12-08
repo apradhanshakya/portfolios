@@ -2,9 +2,13 @@
   "main": "src/index.js",
   "dependencies": {
     "@babel/cli": "^7.12.8",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/runtime-corejs2": "^7.12.5",
     "@deloitte-digital-au/webpack-config": "^3.0.0",
     "@deloitte-digital-au/webpack-config-react": "^3.0.0",
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "regenerator-runtime": "^0.13.7",
+    "uglify": "^0.1.5"
   },
   "scripts": {
     "build": "webpack --mode production",

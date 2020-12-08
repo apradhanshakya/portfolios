@@ -11,8 +11,8 @@ const books = [];
 
 const toggleBackdrop = () => {
     backdrop.classList.toggle('visible');
+      console.log('hello');
 }
-
 const cancelBookDeletion = () => {
     toggleBackdrop();
     deleteBookModal.classList.remove('visible');

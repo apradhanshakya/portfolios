@@ -7,22 +7,22 @@
         justify-content: space-between;
         align-items: center;
         padding: 0 2.5rem;
-        background: #00329e;
+        background: $blue;
 
         h1 {
             margin: 0;
-            color: white;
+            color: $white;
             font-size: 1.5rem;
         }
 
         button {
             font: inherit;
             padding: 0.5rem 1rem;
-            background: #f67722;
-            border: 1px solid #f67722;
-            color: white;
+            background: $orange;
+            border: 1px solid $orange;
+            color: $white;
             border-radius: 6px;
-            box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
+            box-shadow: $box-shadow-1;
             cursor: pointer;
 
             &:hover,
@@ -66,12 +66,12 @@
       
     .btn:hover,
     .btn:active {
-    background: #f67722;
-    border-color: #f67722;
+    background: $box-shadow;
+    border-color: $box-shadow;
     }
     
     .btn--passive {
-    color: #00329e;
+    color: $blue;
     background: transparent;
     border: none;
     box-shadow: none;
@@ -83,9 +83,9 @@
     }
     
     .btn--danger {
-    background: #d30808;
+    background: $color-primary;
     color: white;
-    border-color: #d30808;
+    border-color: $color-primary;
     }
     
     .btn--danger:hover,
@@ -102,7 +102,7 @@
         width: 80%;
         top: 30vh;
         left: 10%;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+        box-shadow: $box-shadow-1;
         display: none;
       }
       
@@ -114,8 +114,8 @@
       .modal .modal__title {
         margin: 0;
         padding: 1rem;
-        border-bottom: 1px solid #00329e;
-        background: #00329e;
+        border-bottom: 1px solid $blue;
+        background: $blue;
         color: white;
         border-radius: 10px 10px 0 0;
       }
@@ -132,7 +132,7 @@
       
       .book-element {
         margin: 1rem 0;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+        box-shadow: $box-shadow-1;
         border-radius: 10px;
         display: flex;
       }

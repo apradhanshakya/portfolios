@@ -30,7 +30,7 @@
     border-bottom: 2px solid #ccc;
     width: 100%;
     font-size: 16px;
-    color: #817e7e; }
+    color: #595959; }
     .movie-list .control-group input:focus {
       outline: none;
       border-color: #ff0062; }
@@ -61,14 +61,14 @@
   background: #00329e; }
   .book-list header h1, .book-list header h2 {
     margin: 0;
-    color: white;
+    color: #FFFFFF;
     font-size: 1.5rem; }
   .book-list header button {
     font: inherit;
     padding: 0.5rem 1rem;
     background: #f67722;
     border: 1px solid #f67722;
-    color: white;
+    color: #FFFFFF;
     border-radius: 6px;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
     cursor: pointer; }
@@ -105,8 +105,8 @@
 
 .book-list .btn:hover,
 .book-list .btn:active {
-  background: #f67722;
-  border-color: #f67722; }
+  background: 0 2px 6px 0 rgba(0, 0, 0, 0.25);
+  border-color: 0 2px 6px 0 rgba(0, 0, 0, 0.25); }
 
 .book-list .btn--passive {
   color: #00329e;
@@ -119,9 +119,9 @@
   background: #aec6f8; }
 
 .book-list .btn--danger {
-  background: #d30808;
+  background: #ff0062;
   color: white;
-  border-color: #d30808; }
+  border-color: #ff0062; }
 
 .book-list .btn--danger:hover,
 .book-list .btn--danger:active {
@@ -136,7 +136,7 @@
   width: 80%;
   top: 30vh;
   left: 10%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
   display: none; }
 
 .book-list .modal.visible {
@@ -161,7 +161,7 @@
 
 .book-list .book-element {
   margin: 1rem 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
   border-radius: 10px;
   display: flex; }
 
@@ -308,7 +308,8 @@
   .section-about p {
     font-size: 18px;
     text-align: left;
-    line-height: 1.8; }
+    line-height: 1.8;
+    color: #595959; }
 
 .projects {
   background: #f7f7f7;
@@ -333,7 +334,7 @@
       height: 150px;
       display: flex;
       text-decoration: none;
-      color: #817e7e; }
+      color: #595959; }
       .projects__list--link .img-section {
         width: 30%; }
       .projects__list--link .img-container {
@@ -370,7 +371,7 @@ h1, h2, h2 {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #817e7e; }
+  color: #595959; }
 
 .container {
   min-height: 100vh;
